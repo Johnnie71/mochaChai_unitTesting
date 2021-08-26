@@ -19,3 +19,9 @@ it('test_async', function(done){
     });
     done();
 });
+
+it('test_practice', function(){
+    return myPromiseFunction().then(function(res){
+        expect(res).to.equal('blah');
+    });
+});
