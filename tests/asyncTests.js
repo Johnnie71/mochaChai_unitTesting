@@ -5,6 +5,13 @@ function myAsyncFunction(callback){
         callback('blah');
     }, 50);
 };
+function myPromiseFunction(){
+    return new Promise(function(resolve, reject){
+        setTimeout(function(){
+            resolve('blah');
+        }, 50);
+    });
+};
 
 it('test_async', function(done){
     myAsyncFunction(function(str){
