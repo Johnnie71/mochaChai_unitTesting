@@ -25,3 +25,8 @@ it('test_practice', function(){
         expect(res).to.equal('blah');
     });
 });
+
+it('test_async_await', async function(){
+    let result = await myPromiseFunction();
+    expect(result).to.equal("blah");
+});
